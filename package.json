@@ -1,0 +1,61 @@
+{
+	"name": "screenreader",
+	"displayName": "screenreader",
+	"description": "",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.53.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:screenreader.speak"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "screenreader.speak",
+				"title": "Speak"
+			}
+		],
+		"configuration": {
+			"title": "Screenreader",
+			"properties": {
+				"Screenreader.apiKey": {
+					"type": "string",
+					"description": "Enter in your API key for the Microsoft Azure Text-to-Speech Library"
+				}
+			}
+		},
+		"keybindings": [
+			{
+				"command": "screenreader.speak",
+				"key": "ctrl+shift+s",
+				"mac": "cmd+shift+s",
+				"when": "editorTextFocus"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.53.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.11.7",
+		"eslint": "^7.19.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.2.1",
+		"typescript": "^4.1.3",
+		"vscode-test": "^1.5.0"
+	},
+	"dependencies": {
+		"microsoft-cognitiveservices-speech-sdk": "^1.15.0",
+		"speaker": "^0.5.2"
+	}
+}
