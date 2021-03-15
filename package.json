@@ -1,4 +1,5 @@
 {
+	"publisher": "AngelicaChung",
 	"name": "screenreader",
 	"displayName": "screenreader",
 	"description": "",
@@ -44,10 +45,10 @@
 		"test": "node ./test/runTest.js"
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.53.0",
 		"@types/glob": "^7.1.3",
 		"@types/mocha": "^8.0.4",
 		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.53.0",
 		"eslint": "^7.19.0",
 		"glob": "^7.1.6",
 		"mocha": "^8.2.1",
@@ -55,6 +56,7 @@
 		"vscode-test": "^1.5.0"
 	},
 	"dependencies": {
+		"angular": "^1.8.2",
 		"microsoft-cognitiveservices-speech-sdk": "^1.15.0",
 		"speaker": "^0.5.2"
 	}
