@@ -2,7 +2,23 @@
 
 Screen Reader is a Visual Studio Code extension that allows the user to highlight anything from a single letter to an entire .js file and use the Command Palette to read the code aloud using Microsoft Azure's text-to-speech capabilities.
 
-## Requirements
+## Quick Start
+
+To download the extension in VS Code: [Open Store](https://marketplace.visualstudio.com/items?itemName=AngelicaChung.screenreader)
+
+Currently, the extension is only able to read the highlighted text (can be multilined). To read the text aloud, please follow one of these options:
+
+1. Command Palette
+
+After highlighting the text you would like to be read, open the command palette in VS Code, and input the keyword Speak
+
+2. Key Command
+
+After highlighting the text you would like to be read, please press the key combination: 
+
+`cmd` + `shift` + `s` or `ctrl` + `shift` + `s` (depending on your operating system)
+
+## Dev Requirements
 
 In order to run this code, you will need to install the following npm pacakges: 
 
@@ -15,6 +31,8 @@ In order to run this code, you will need to install the following npm pacakges:
 I am working on being able to call up the current line from the VS Code editor.
 
 This extension only supports .js files at this time.
+
+I would love any feedback or suggestions. These can be submitted to the [GitHub Repo Issues](https://github.com/JellyB1/microsoft_accessibility_hackathon/issues).
 
 ### 1.0.0
 
